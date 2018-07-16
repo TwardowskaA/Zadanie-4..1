@@ -7,20 +7,6 @@ public class RightTriangle {
         boolean isRightTriangle2 = ((triangle.getA() * triangle.getA()) + (triangle.getC() * triangle.getC()) == triangle.getB() * triangle.getB());
 
 
-        if (isRightTriangle) {
-            System.out.println("Trójkąt jest prostokątny");
-
-        } else if (isRightTriangle1) {
-            System.out.println("Trójkąt jest prostokątny");
-
-        } else if (isRightTriangle2) {
-            System.out.println("Trójkąt jest prostokątny");
-
-        } else {
-            System.out.println("Trókąt nie jest prostokątny");
-
-        }
-
-        return isRightTriangle;
+        return isRightTriangle || isRightTriangle1 || isRightTriangle2;
     }
 }
